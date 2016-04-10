@@ -7,12 +7,12 @@ class MainPagesControllerTest < ActionController::TestCase
   end
 
   test "should get users" do
-    get :users
+    post :users, :user_id => "1"
     assert_response :success
   end
 
   test "should get contactos" do
-    get :contactos
+    post :contactos, :contacto_id => "1"
     assert_response :success
   end
 
