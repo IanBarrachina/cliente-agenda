@@ -1,0 +1,13 @@
+<h1>Cliente Agenda Ian</h1>
+
+<%= form_tag(users_path, :method => "post") do %>
+    <%= label_tag(:user_id, "ID de Usuario:") %>
+    <%= text_field_tag(:user_id) %>
+    <%= submit_tag("Buscar") %>
+<% end %>
+
+<%= form_tag(contactos_path, :method => "post") do %>
+    <%= label_tag(:contacto_id, "ID de Contacto:") %>
+    <%= text_field_tag(:contacto_id) %>
+    <%= submit_tag("Buscar") %>
+<% end %>
